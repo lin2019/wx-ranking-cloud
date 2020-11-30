@@ -1,0 +1,27 @@
+/* components/navigation-bar/navigation-bar.wxss */
+.van-search {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.bar-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #FFA500;
+  color: #fff;
+  font-size: 14px;
+  padding-left: 10rpx;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+.position {
+  display: flex;
+  align-items: center;
+}
+.search {
+  width: 50%;
+}

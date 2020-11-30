@@ -1,0 +1,8 @@
+<!--components/navigation-bar/navigation-bar.wxml-->
+<view class="bar-wrapper" style="height: {{menuBar.screentHeight}}px;padding-top: {{menuBar.top}}px">
+  <view class="position">
+    <van-icon name="location-o" color="#fff" size="24px" />
+    广东
+  </view>
+  <van-search shape="round" background="#FFA500" custom-class="inputSearch" class="search" placeholder="请输入关键词" />
+</view>

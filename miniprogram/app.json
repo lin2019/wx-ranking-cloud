@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/openapi/openapi",
+    "pages/openapi/serverapi/serverapi",
+    "pages/openapi/callback/callback",
+    "pages/openapi/cloudid/cloudid",
+    "pages/im/im",
+    "pages/im/room/room"
+  ],
+  "tabBar": {
+    "color": "#BFBFBF",
+    "selectedColor": "#FFA500",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "/images/circular.png",
+      "selectedIconPath": "/images/circular_select.png"
+    }, {
+      "pagePath": "pages/userConsole/userConsole",
+      "text": "分类",
+      "iconPath": "/images/triangle.png",
+      "selectedIconPath": "/images/triangle_select.png"
+    }, {
+      "pagePath": "pages/storageConsole/storageConsole",
+      "text": "我的",
+      "iconPath": "/images/square.png",
+      "selectedIconPath": "/images/square_select.png"
+    }]
+  },
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFA500",
+    "navigationBarTitleText": "明星屋",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}
