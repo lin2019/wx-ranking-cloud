@@ -8,7 +8,7 @@ Page({
     logged: false,
     takeSession: false,
     requestResult: '',
-    paddingTop: app.globalData.menuBar.screentHeight
+    paddingTop: app.globalData.menuBar.top + app.globalData.menuBar.height + 3
   },
 
   onLoad: function() {

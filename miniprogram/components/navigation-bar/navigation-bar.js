@@ -1,6 +1,6 @@
 // components/navigation-bar/navigation-bar.js
 const app = getApp();
-const { globalData: { menuBar } } = app;
+const { globalData: { menuBar, system } } = app;
 
 Component({
   options: {
@@ -19,7 +19,13 @@ Component({
   data: {
     menuBar: {
       top: menuBar.top,
-      screentHeight: menuBar.screentHeight
+      bottom: menuBar.bottom,
+      right: menuBar.right,
+      left: menuBar.left,
+      height: menuBar.height
+    },
+    system: {
+      windowWidth: system.windowWidth
     }
   },
 

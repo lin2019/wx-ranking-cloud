@@ -19,14 +19,11 @@ App({
 
     // 获取胶囊和导航栏信息
     let menuBtn = wx.getMenuButtonBoundingClientRect();
-    this.globalData.menuBar = {};
-    this.globalData.menuBar.top = menuBtn.top;
-    this.globalData.menuBar.height = menuBtn.height;
+    this.globalData.menuBar = menuBtn;
+    console.log(menuBtn);
     wx.getSystemInfo({
       success: (result) => {
-        let barHeight = result.statusBarHeight;
-        this.globalData.menuBar.screentHeight = barHeight + menuBtn.height + (menuBtn.top - barHeight) * 2;
-        console.log(this.globalData.menuBar);
+        this.globalData.system = result;
       },
       fail: (error) => {
         wx.showToast({
