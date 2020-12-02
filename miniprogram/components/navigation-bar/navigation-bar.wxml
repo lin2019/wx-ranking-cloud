@@ -1,20 +1,20 @@
 <!--components/navigation-bar/navigation-bar.wxml-->
-<view class="bar-wrapper" style="height: {{menuBar.bottom + 6 }}px;padding-top: {{ menuBar.top -3 }}px;padding-right:{{ system.windowWidth - menuBar.left + 20 }}px">
-  <view class="position">
+<view class="bar-wrapper" 
+  style="height: {{menuBar.bottom + 6 }}px;padding-top: {{ menuBar.top -3 }}px;padding-right:{{ system.windowWidth - menuBar.left + 20 }}px;background-color: {{ isBg }}">
+  <view class="position" wx:if="{{ isScroll }}">
     <van-icon name="location-o" color="#fff" size="20px" />
     广东
   </view>
   <view class="search-wrapper">
-    <van-icon name="search" size="20px" custom-class="search-icon p-icon" />
+    <van-icon name="search" size="20px" class="search-icon p-icon" />
     <input 
       type="text" 
       name="" 
       id="" 
       class="search" 
       placeholder-class="ph-class"
-      style="height: {{ menuBar.height + 6 }}px;border-radius: {{ menuBar.bottom + 3 }}px"
+      style="height: {{ menuBar.height + 6 }}px;border-radius: {{ menuBar.bottom + 3 }}px;background: {{ isScroll ? '#fff' : '#eee'}}"
       placeholder="请输入关键词"
       maxlength="20" />
-      <van-icon name="close" color="#969799" size="20px" custom-class="close-icon p-icon" />
   </view>
 </view>

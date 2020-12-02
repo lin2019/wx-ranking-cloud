@@ -8,7 +8,9 @@ Page({
     logged: false,
     takeSession: false,
     requestResult: '',
-    paddingTop: app.globalData.menuBar.top + app.globalData.menuBar.height + 3
+    paddingTop: app.globalData.menuBar.top + app.globalData.menuBar.height + 6,
+    isScroll: true,
+    isBg: '#FFA500'
   },
 
   onLoad: function() {
@@ -116,4 +118,11 @@ Page({
     })
   },
 
+  onPageScroll: function(e) {
+    const flag = e.scrollTop > this.data.paddingTop;
+    this.setData({
+      isScroll: flag ? false : true,
+      isBg: flag ? '#ffffff' : '#FFA500'
+    })
+  }
 })

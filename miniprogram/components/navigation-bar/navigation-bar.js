@@ -10,7 +10,14 @@ Component({
    * 组件的属性列表
    */
   properties: {
-
+    isScroll: {
+      type: Boolean,
+      value: true
+    },
+    isBg: {
+      type: String,
+      value: '#FFA500'
+    }
   },
 
   /**

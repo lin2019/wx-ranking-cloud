@@ -1,6 +1,7 @@
 {
   "usingComponents": {
-    "hs-navigation-bar": "../../components/navigation-bar/navigation-bar"
+    "navigation-bar": "../../components/navigation-bar/navigation-bar",
+    "carousel": "../../components/carousel/carousel"
   },
   "navigationStyle": "custom"
 }

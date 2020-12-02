@@ -1,6 +1,7 @@
 <!--index.wxml-->
 <view class="container" style="padding-top: {{ paddingTop }}px">
-  <hs-navigation-bar style="width: 100%"></hs-navigation-bar>
+  <navigation-bar isScroll="{{ isScroll }}" isBg="{{ isBg }}" style="width: 100%"></navigation-bar>
+  <carousel style="width: 100%"></carousel>
   <!-- 用户 openid -->
   <view class="userinfo">
     <button 

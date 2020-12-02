@@ -1,0 +1,11 @@
+<view class="carousel-wrapper">
+  <swiper previous-margin="20px" next-margin="20px">
+    <block wx:for="{{ list }}" wx:key="index">
+      <swiper-item>
+        <view class="carousel-item">
+          <image src="{{ item.img }}" lazy-load="true" class="imgs"></image>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
